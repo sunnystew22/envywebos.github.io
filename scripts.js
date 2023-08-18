@@ -1,7 +1,7 @@
 if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.html')
 
   function SearchQuery(val) {
-    document.getElementById("searchButton").href = "https://www.bing.com/search?q=" + val;
+    document.getElementById("searchButton").href = "https://www.google.co.uk/search?q=" + val;
   }
 
   function buttonClick(){
@@ -69,7 +69,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
     function showTelegram() {
       new WinBox({
         title: "Telegram",
-        icon: "icons/discross.png",
+        icon: "icons/telegram_2048x2048.png", // SVG version also uploaded (/Telegram.svg) but idk if its gonna work
         class: "eclipsemono",
         x: "center",
         y: "center",
@@ -79,7 +79,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
         right: 0,
         bottom: 35,
         left: 0,
-        url: "https://web.telegram.org/?legacy=1",
+        url: "https://web.telegram.org/?legacy=1/im#/im",
       });
     }
     function showDualWindow() {
