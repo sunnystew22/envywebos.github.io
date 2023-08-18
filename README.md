@@ -1,2 +1,3 @@
-# Envy, the open OS
-Envy is a enviorment for locked down devices, such as Chromebooks or Windows devices.
+<img src="envy.jpg" width="512" height="300">
+<h1>Envy, the open OS</h1>
+<P>Envy is a enviorment for locked down devices, such as Chromebooks or Windows devices.</P>
