@@ -65,7 +65,23 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
         url: "https://wttr.in/",
       });
     }
-    
+
+    function showTelegram() {
+      new WinBox({
+        title: "Telegram",
+        icon: "icons/discross.png",
+        class: "eclipsemono",
+        x: "center",
+        y: "center",
+        width: "20%",
+        height: "20%",
+        top: 0,
+        right: 0,
+        bottom: 35,
+        left: 0,
+        url: "https://web.telegram.org/?legacy=1",
+      });
+    }
     function showDualWindow() {
       new WinBox({
         title: "Dual",
