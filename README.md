@@ -8,5 +8,5 @@
   Envy can do multiple things, including;<br><br>
   <b>Basic gaming (Anything HTML5/js)<br>
   Customize itself, with wallpapers!<br>
-  Discord (via the great people at Discross!<br></b>
+  Discord (via the great people at Discross!)<br></b>
 </P>
