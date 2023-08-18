@@ -69,8 +69,8 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
     function showTelegram() {
       new WinBox({
         title: "Telegram",
-        icon: "icons/telegram_small.png", // SVG version also uploaded (/Telegram.svg) but idk if its gonna work
-        class: "eclipsemono",
+        icon: "icons/telegram_480x480.png", // SVG version also uploaded (/telegram.svg) but idk if its gonna work
+        class: ["no-min", "eclipsemono"],
         x: "center",
         y: "center",
         width: "60%",
@@ -79,7 +79,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
         right: 0,
         bottom: 35,
         left: 0,
-        url: "https://web.telegram.org/?legacy=1/im#/im",
+        url: "https://web.telegram.org/?legacy=1/im/", // Could just iframe this cuz winbox is broken :/
       });
     }
     function showDualWindow() {
