@@ -1,0 +1,253 @@
+<html>
+  <title>Envy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+<div class="bar">
+<span style="text-align: left; position: absolute; left: 0; bottom: 0;display: flex;height: 35px;gap: 6px; align-items: center;">
+<img src="start.png" onclick="showBooWindow()">
+<input id="searchBox" type="text" name="searchBox" value="" onchange="SearchQuery(this.value)" placeholder="Search Envy and the web">
+<img src="icons/search.png" width="25" height="25" id="searchButton" href="https://www.bing.com" target="" onclick="buttonClick()">
+<img src="icons/tops.png" width="25" height="25" onclick="manageDual()">
+</span>
+<span style="text-align: right; position: absolute; right: 0; bottom: 0;display: flex;height: 35px;gap: 6px; align-items: center;">
+<div id="clock" style="display: flex;justify-content: center;align-items: center;"></div>
+<img src="icons/noti.png" onclick="shownoti()" width="25" height="25">
+<img src="icons/mark.png" width="25" height="25" onclick="showmark()">
+</span>
+</div>
+    <div id="contextMenu" class="context-menu" 
+        style="display:none">
+        <ul>
+            <li><a onclick="location.reload()">Refresh</a></li>
+            <li><a onclick="displaypanel()">Duals settings</a></li>
+            <li><a onclick="displaypanel()">Display settings</a></li>
+        </ul>
+    </div>
+  <div class="hidden">
+    <div id="Teresa">
+      <center>
+      <br>
+        <img src="icons/lock.png" width="32" height="32" onclick="widgetinit()" />
+        <p>Welcome,</p>
+        <p><b>*user*</b></p>
+        <button onclick="showall()">Show all apps</button>
+      </center>
+    </div>
+    <div id="teresaplus">
+      <center>
+      <br>
+        <br><img src="icons/info.png" onclick="showAboutWindow()" />
+        <img src="icons/clock.png" onclick="showCock()" />
+        <img src="icons/discross.png" onclick="showDiscordWindow()" />
+        <img src="icons/game.png" onclick="summongamehub()" />
+        <img src="icons/setting.png" onclick="showSettingsWindow()" />
+        <img src="icons/wttr.png" onclick="showWeather()" />
+        <img src="icons/widget.png" onclick="widgetinit()" />
+      </center>
+    </div>
+    <div id="teresadual">
+      <center>
+      <br>
+      <img src="icons/tops.png" onclick="showDualWindow()"><br>
+      Dual 1
+      </center>
+    </div>
+    <div id="TeresaZwei">
+      <center>
+      <p><b>No notifications.</b></p>
+      </center>
+    </div>
+    <div id="TeresaMark">
+      <center>
+      <p><b>No bookmarks.</b></p>
+      </center>
+    </div>
+    <div id="teresadrei">
+      <center>
+      <h2>Select a widget</h2>
+        <img src="icons/widget.png" onclick="widgeterror()" />
+        <img src="icons/widget.png" onclick="widgetgallery()" />
+      </center>
+    </div>
+    <div id="about">
+      <center>
+      <br>
+      <img src="boo.png" width="64" height="64" ><img>
+      <h1>Envy</h1>
+      <h3>Version 4.2</h3>
+      <script>
+      var OSName="Unknown OS";
+      if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
+      if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
+      if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
+      if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
+      
+      document.write('Host OS: '+OSName);
+      </script>
+      <br><br>
+      
+      <button onclick="showmore()">Advanced information</button><br><br>
+      <button onclick="showlog()">Open change log</button>
+      </center>
+    </div>
+    <div id="more">
+      <center>
+      <br>
+      <h1>Advanced information</h1>
+      <script>
+      var nVer = navigator.appVersion;
+      var nAgt = navigator.userAgent;
+      var browserName  = navigator.appName;
+      var fullVersion  = ''+parseFloat(navigator.appVersion); 
+      var majorVersion = parseInt(navigator.appVersion,10);
+      var nameOffset,verOffset,ix;
+
+      // In Opera, the true version is after "OPR" or after "Version"
+      if ((verOffset=nAgt.indexOf("OPR"))!=-1) {
+       browserName = "Opera";
+      fullVersion = nAgt.substring(verOffset+4);
+       if ((verOffset=nAgt.indexOf("Version"))!=-1) 
+      fullVersion = nAgt.substring(verOffset+8);
+      }
+      // In MS Edge, the true version is after "Edg" in userAgent
+      else if ((verOffset=nAgt.indexOf("Edg"))!=-1) {
+       browserName = "Microsoft Edge";
+       fullVersion = nAgt.substring(verOffset+4);
+      }
+      // In MSIE, the true version is after "MSIE" in userAgent
+      else if ((verOffset=nAgt.indexOf("MSIE"))!=-1) {
+       browserName = "Microsoft Internet Explorer";
+       fullVersion = nAgt.substring(verOffset+5);
+      }
+      // In Chrome, the true version is after "Chrome" 
+      else if ((verOffset=nAgt.indexOf("Chrome"))!=-1) {
+       browserName = "Chrome";
+       fullVersion = nAgt.substring(verOffset+7);
+      }
+      // In Safari, the true version is after "Safari" or after "Version" 
+      else if ((verOffset=nAgt.indexOf("Safari"))!=-1) {
+       browserName = "Safari";
+       fullVersion = nAgt.substring(verOffset+7);
+       if ((verOffset=nAgt.indexOf("Version"))!=-1) 
+         fullVersion = nAgt.substring(verOffset+8);
+      }
+      // In Firefox, the true version is after "Firefox" 
+      else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
+       browserName = "Firefox";
+       fullVersion = nAgt.substring(verOffset+8);
+      }
+      // In most other browsers, "name/version" is at the end of userAgent 
+      else if ( (nameOffset=nAgt.lastIndexOf(' ')+1) < 
+                (verOffset=nAgt.lastIndexOf('/')) ) 
+      {
+       browserName = nAgt.substring(nameOffset,verOffset);
+       fullVersion = nAgt.substring(verOffset+1);
+       if (browserName.toLowerCase()==browserName.toUpperCase()) {
+        browserName = navigator.appName;
+       }
+      }
+      // trim the fullVersion string at semicolon/space if present
+      if ((ix=fullVersion.indexOf(";"))!=-1)
+         fullVersion=fullVersion.substring(0,ix);
+      if ((ix=fullVersion.indexOf(" "))!=-1)
+         fullVersion=fullVersion.substring(0,ix);
+
+      majorVersion = parseInt(''+fullVersion,10);
+      if (isNaN(majorVersion)) {
+       fullVersion  = ''+parseFloat(navigator.appVersion); 
+       majorVersion = parseInt(navigator.appVersion,10);
+      }
+
+      document.write(''
+       +'Browser name  = '+browserName+'<br>'
+       +'Full version  = '+fullVersion+'<br>'
+       +'Major version = '+majorVersion+'<br>'
+       +'User agent = '+navigator.userAgent+'<br>'
+      )
+      </script>
+      </center>
+    </div>
+    <div id="clockapp">
+      <center>
+      <h2>coming soon</h2>
+      </center>
+    </div>
+    <div id="log">
+      <center>
+      <br>
+      <img src="boo.png" width="64" height="64" ><img>
+      <h1>Changelog</h1>
+      <h3>Build 081723</h3>
+      <p>
+      - Duals now working<br>
+      - Dual manager added<br>
+      - Weather app added<br>
+      - Bookmark development started
+      </p>
+      </center>
+    </div>
+    <div id="cc">
+      <center>
+      <br>
+      <h2>Adjust your computer's settings</h2>
+      <img src="icons/display.png" onclick="displaypanel()" />
+      <img src="icons/user.png" onclick="userpanel()" />
+      </center>
+    </div>
+    <div id="ccdisplay">
+      <center>
+      <br>
+      <h2>Custom wallpapers</h2>
+      <button onclick="urlbox()">Type in a URL</button><br><br>
+      <h2> Community wallpapers</h2>
+      <button onclick="community()">Open community wallpapers</button>
+      </center>
+    </div>
+    <div id="communitywall">
+      <center>
+      <br>
+      <button onclick="commwp1()">pack.png (Requested by CreeperGuy)</button>
+      </center>
+    </div>
+    <div id="urlbox">
+      <center>
+      <br>
+      <h2>Type in your URL</h2>
+      <input type=text id="newid">
+      <button onclick="setWallpaper()">Apply</button>
+      </center>
+    </div>
+    <div id="ccuser">
+      <center>
+      <br>
+      <h2>Change or create a user</h2>
+      <button onclick="showerror()">Make a local account</button><br><br>
+      <button onclick="showerror()">Use your Zone account</button>
+      <p>Accounts are non-functional as of now.</p>
+      </center>
+    </div>
+    <div id="makeitlocal">
+      <center>
+      <br>
+      <h2>Coming soon</h2>
+      </center>
+    </div>
+    <div id="err">
+      <center>
+      <br>
+      <img src="icons/info.png" width="64" height="64" ><img>
+      <h1>Error</h1>
+      <p>We have detected a error. Refresh reccomended. This may be a missing feature aswell.</p>
+      </center>
+    </div>
+    <div id="widgallery">
+      <center>
+      <img src="boo.png" width="84" height="84" ><img>
+      </center>
+    </div>
+  </div>
+  <script src="winbox.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+  <script>
+  </script>
+</html>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://ownedbywuigi.neocities.org/webos/mobile/apps/style.css">
+<br>
+
+<script>
+  function SearchQuery(val) {
+    document.getElementById("searchButton").href = "https://www.bing.com/search?q=" + val;
+  }
+
+  function buttonClick(){
+    document.getElementById("searchBox").value = "";
+  }
+</script>
+
+<center>
+<section>
+  <input id="searchBox" type="text" name="searchBox" value="" onchange="SearchQuery(this.value)">
+  <a id="searchButton" href="https://www.bing.com" target="" onclick="buttonClick()">Search</a>
+<section>
+</center>
