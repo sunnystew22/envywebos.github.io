@@ -69,12 +69,12 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
     function showTelegram() {
       new WinBox({
         title: "Telegram",
-        icon: "icons/telegram_2048x2048.png", // SVG version also uploaded (/Telegram.svg) but idk if its gonna work
+        icon: "icons/telegram_small.png", // SVG version also uploaded (/Telegram.svg) but idk if its gonna work
         class: "eclipsemono",
         x: "center",
         y: "center",
-        width: "20%",
-        height: "20%",
+        width: "60%",
+        height: "60%",
         top: 0,
         right: 0,
         bottom: 35,
@@ -95,6 +95,22 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
         bottom: 35,
         left: 0,
         url: "https://envywebos.github.io",
+      });
+    }
+
+function showVidTest() {
+      new WinBox({
+        title: "VidsTest",
+        class: "eclipsemono",
+        x: "center",
+        y: "center",
+        width: "50%",
+        height: "50%",
+        top: 0,
+        right: 0,
+        bottom: 35,
+        left: 0,
+        url: "apps/vidstest.html",
       });
     }
     
