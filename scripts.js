@@ -98,7 +98,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
       });
     }
 
-function showVidsTest() {
+function showVidstest() {
       new WinBox({
         title: "VidsTest",
         class: "eclipsemono",
