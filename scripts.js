@@ -71,7 +71,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
 
     function showTelegram() {
       new WinBox({
-        title: "Telegram",
+        title: "JS/Linux",
         icon: "icons/telegram_480x480.png", // SVG version also uploaded (/telegram.svg). It does work from testing -wuigi
         class: ["no-min", "eclipsemono"],
         x: "center",
@@ -82,7 +82,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
         right: 0,
         bottom: 35,
         left: 0,
-        url: "https://web.telegram.org/?legacy=1/im/", // CURRENTLY BROKEN - TELEGRAM WONT LET YOU IFRAME, just redirects you instead.
+        url: "https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192", // in the process of removing telegram for JS/Linux
       });
     }
     function showDualWindow() {
