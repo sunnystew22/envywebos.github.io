@@ -1,5 +1,5 @@
 if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.html')
-// David, Google won't work on iframes. I might make it FrogFind soon.
+
   function SearchQuery(val) {
     document.getElementById("searchButton").href = "https://www.bing.com/search?q=" + val;
   }
@@ -79,7 +79,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
         right: 0,
         bottom: 35,
         left: 0,
-        url: "https://web.telegram.org/?legacy=1/im/", // Could just iframe this cuz winbox is broken :/
+        url: "https://web.telegram.org/?legacy=1/im/", // CURRENTLY BROKEN - TELEGRAM WONT LET YOU IFRAME, just redirects you instead.
       });
     }
     function showDualWindow() {
