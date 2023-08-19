@@ -4,8 +4,8 @@ TERESA - Teresa is the name for Envy UI, like bookmarks, notifications, and the 
 <html>
 <head>
 <meta property="og:title" content="Envy, the free OS" />
-<meta property="og:description" content="Envy is an enviorment for locked down Windows and Chromebooks." />
-<meta property="og:image" content="envywebos.github.io/wp2.jpg" />
+<meta property="og:description" content="Envy is an environment for locked down Windows and Chromebooks." />
+<meta property="og:image" content="envywebos.github.io/envy.jpg" />
   <title>Envy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -14,7 +14,7 @@ TERESA - Teresa is the name for Envy UI, like bookmarks, notifications, and the 
 <span style="text-align: left; position: absolute; left: 0; bottom: 0;display: flex;height: 35px;gap: 6px; align-items: center;">
 <img src="start.png" onclick="showBooWindow()">
 <input id="searchBox" type="text" name="searchBox" value="" onchange="SearchQuery(this.value)" placeholder="Search Envy and the web">
-<img src="icons/search.png" width="25" height="25" id="searchButton" href="https://www.bing.com" target="" onclick="buttonClick()">
+<img src="icons/search.png" width="25" height="25" id="searchButton" href="https://www.bing.com" target="_blank" onclick="buttonClick()"> <!-- Doesn't seem to be working atm. fixing soon -->
 <img src="icons/tops.png" width="25" height="25" onclick="manageDual()">
 </span>
 <span style="text-align: right; position: absolute; right: 0; bottom: 0;display: flex;height: 35px;gap: 6px; align-items: center;">
@@ -88,9 +88,10 @@ TERESA - Teresa is the name for Envy UI, like bookmarks, notifications, and the 
       <script>
       var OSName="Unknown OS";
       if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
-      if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
-      if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
+      if (navigator.appVersion.indexOf("Mac")!=-1) OSName="Mac";
+      if (navigator.appVersion.indexOf("X11")!=-1) OSName="Unix";
       if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
+<!-- Isn't this taken from useragent? android mobile seems to return Linux for some reason. -->
       
       document.write('Host OS: '+OSName);
       </script>
@@ -103,7 +104,7 @@ TERESA - Teresa is the name for Envy UI, like bookmarks, notifications, and the 
     <div id="more">
       <center>
       <br>
-      <h1>Advanced information</h1>
+      <h1>Advanced information:</h1>
       <script>
       var nVer = navigator.appVersion;
       var nAgt = navigator.userAgent;
@@ -247,7 +248,7 @@ TERESA - Teresa is the name for Envy UI, like bookmarks, notifications, and the 
       <br>
       <img src="icons/info.png" width="64" height="64" ><img>
       <h1>Error</h1>
-      <p>We have detected a error. Refresh reccomended. This may be a missing feature aswell.</p>
+      <p>We have detected a error. Refresh recommended. This may be a missing feature aswell.</p>
       </center>
     </div>
     <div id="widgallery">
