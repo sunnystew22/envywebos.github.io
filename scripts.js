@@ -1,7 +1,7 @@
 if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.html')
-
+// David, Google won't work on iframes. I might make it FrogFind soon.
   function SearchQuery(val) {
-    document.getElementById("searchButton").href = "https://www.google.co.uk/search?q=" + val;
+    document.getElementById("searchButton").href = "https://www.bing.com/search?q=" + val;
   }
 
   function buttonClick(){
