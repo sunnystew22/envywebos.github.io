@@ -1,3 +1,6 @@
+// todo
+// lock screen (david)
+// found an x86 emu in JS/WebGL, might make that a seperate Dual thing later (wuigi)
 if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.html')
 
   function SearchQuery(val) {
@@ -69,7 +72,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
     function showTelegram() {
       new WinBox({
         title: "Telegram",
-        icon: "icons/telegram_480x480.png", // SVG version also uploaded (/telegram.svg) but idk if its gonna work
+        icon: "icons/telegram_480x480.png", // SVG version also uploaded (/telegram.svg). It does work from testing -wuigi
         class: ["no-min", "eclipsemono"],
         x: "center",
         y: "center",
