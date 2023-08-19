@@ -76,13 +76,13 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
         class: ["no-min", "eclipsemono"],
         x: "center",
         y: "center",
-        width: "40%",
+        width: "50%",
         height: "80%",
         top: 0,
         right: 0,
         bottom: 35,
         left: 0,
-        url: "https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192", // in the process of removing telegram for JS/Linux
+        url: "https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=256", // in the process of removing telegram for JS/Linux
       });
     }
     function showDualWindow() {
