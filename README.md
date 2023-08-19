@@ -2,6 +2,7 @@
 <h1>Envy, the open OS</h1>
 <P>Envy is a enviorment for locked down devices, such as Chromebooks or Windows devices.</P>
 <br>
+<a name="help"></a>
 <h2>What can Envy do?</h2>
 <b><p>THIS PART OF THE README IS DUE TO CHANGE.</p></b>
 <P>
