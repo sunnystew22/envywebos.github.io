@@ -11,4 +11,4 @@ Envy is a environment for locked down devices, such as Chromebooks or Windows de
   * Basic gaming (Anything HTML5/js)
   * Customize itself, with wallpapers!
   * Discord *(via the great people at Discross!)*
-
+  * Alpine Linux *(via JS/Linux!)*
