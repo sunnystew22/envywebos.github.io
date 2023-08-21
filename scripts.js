@@ -72,7 +72,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
     function showTelegram() {
       new WinBox({
         title: "JS/Linux",
-        icon: "icons/telegram_480x480.png", // SVG version also uploaded (/telegram.svg). It does work from testing -wuigi
+        icon: "icons/telegram_480x480.png",
         class: ["no-min", "eclipsemono"],
         x: "center",
         y: "center",
@@ -82,9 +82,27 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
         right: 0,
         bottom: 35,
         left: 0,
-        url: "https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=256", // in the process of removing telegram for JS/Linux
+        url: "https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=256",
       });
     }
+
+    function showmoreTelegram() {
+      new WinBox({
+        title: "test",
+        icon: "icons/telegram_480x480.png",
+        class: ["no-min", "eclipsemono"],
+        x: "center",
+        y: "center",
+        width: "50%",
+        height: "80%",
+        top: 0,
+        right: 0,
+        bottom: 35,
+        left: 0,
+        url: "https://bellard.org/jslinux/vm.html?url=win2k.cfg&mem=256&graphic=1&w=800&h=600",
+      });
+    }
+
     function showDualWindow() {
       new WinBox({
         title: "Dual",
