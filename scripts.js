@@ -158,7 +158,7 @@ function showVidstest() {
     function showlock() {
       new WinBox({
         title: " ",
-        class: ["no-max", "no-min", "no-title", "eclipselock"],
+        class: ["no-max", "no-min", "no-close", "no-title", "eclipselock"],
         x: "left",
         y: "bottom",
         width: "100%",
