@@ -72,18 +72,17 @@
   let x = new Date();
   let hours = x.getHours().toString().padStart(2, '0'); // 18
   let minutes = x.getMinutes().toString().padStart(2, '0'); // 37
-  
   let timeString = `${hours}:${minutes}` // 18:37
   let element = document.getElementById('time');
   element.innerText = timeString;
 }
 UpdateTime();
-setInterval(UpdateTime, 60000); // 60000ms -> 60 sec/1 min delay
+setInterval(UpdateTime, 1000); // 60000ms -> 60 sec/1 min delay
         // Delete lockscreen func.
 
           function RemoveLockScreen() {
             let element = document.getElementById('teresalock');
-            await delay(50) // prevents glitch that occurs when clicking it twice rapidly. 
+
             element.remove() //lol bye
           }
         
