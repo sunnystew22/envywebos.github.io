@@ -52,11 +52,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
       });
     }
 
-function LockScreen() {
-await delay(50)
-var design = "/lockscreen.html"
-    // work in progress
-}
+
 
 
     function showWeather() {
