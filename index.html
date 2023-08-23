@@ -73,8 +73,10 @@
   let hours = x.getHours().toString().padStart(2, '0'); // 18
   let minutes = x.getMinutes().toString().padStart(2, '0'); // 37
   let timeString = `${hours}:${minutes}` // example: 18:37
-  let elements = document.getElementById('time');
-    elements.innerText = timeString;
+  let elements = document.querySelectorAll('#time');
+  elements.forEach(function(elm) {
+    if (elm === undefined || elm === null) return;
+    elm.innerText = timeString;
   });
 }
 UpdateTime();
