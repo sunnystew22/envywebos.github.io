@@ -158,6 +158,23 @@ function showVidstest() {
         mount: document.getElementById("teresadual").cloneNode(true),
       });
     }
+
+    function showlock() {
+      new WinBox({
+        title: " ",
+        class: ["no-max", "no-min", "no-title", "eclipselock"],
+        x: "left",
+        y: "bottom",
+        width: "100%",
+        height: "100%",
+        header: 0,
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
+        mount: document.getElementById("teresalock").cloneNode(true),
+      });
+    }
     
     function setWallpaper() {
       document.body.style.backgroundImage = 'url("' + document.querySelector(".winbox #newid").value + '")';

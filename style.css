@@ -28,11 +28,14 @@ body {
       display: none;
     }
     .winbox.eclipsemono {
-      background: #202020;
+      background: #2f2f2f;
+    }
+    .winbox.eclipselock {
+      background: #000000;
     }
     .winbox.eclipsemono .wb-body {
       color: #fff;
-      background: #252525;
+      background: #202020;
     }
     .winbox.eclipsemono .wb-title {
       color: #fff;
