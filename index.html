@@ -72,11 +72,9 @@
   let x = new Date();
   let hours = x.getHours().toString().padStart(2, '0'); // 18
   let minutes = x.getMinutes().toString().padStart(2, '0'); // 37
-  let timeString = `${hours}:${minutes}` // 18:37
-  let elements = document.querySelectorAll('#time');
-  elements.forEach(function(elm) {
-    if (elm === undefined || elm === null) return;
-    elm.innerText = timeString;
+  let timeString = `${hours}:${minutes}` // example: 18:37
+  let elements = document.getElementById('time');
+    elements.innerText = timeString;
   });
 }
 UpdateTime();
@@ -90,14 +88,14 @@ setInterval(UpdateTime, 1000); // 60000ms -> 60 sec/1 min delay
   </script>
         
       <center>
-        <h1 style="font-size:64px;margin-bottom:0" id="time">00:00</h1> <!-- 00:00 is fallback time incase it breaks -->
+        <h1 id="time">00:00</h1> <!-- 00:00 is fallback time incase it breaks -->
       </center>
       <br/>
       <br/>
       <br/>
         <center>
       <button onClick=RemoveLockScreen()>Click here to unlock.</button>
-          <p><i>Not working right now.</i></p>
+          
         </center>
      
     </div>
@@ -256,7 +254,7 @@ setInterval(UpdateTime, 1000); // 60000ms -> 60 sec/1 min delay
       <center>
       <br>
       <h2>Custom wallpapers</h2>
-      <button onclick="urlbox()">Type in a URL</button><br><br>
+      <button onclick="urlbox()">Type in an image URL</button><br><br>
       </center>
     </div>
     <div id="urlbox">
