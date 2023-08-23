@@ -84,21 +84,17 @@ setInterval(UpdateTime, 1000); // 60000ms -> 60 sec/1 min delay
         // Delete lockscreen func.
 
           function RemoveLockScreen() {
-            let element = document.getElementById('teresalock');
-
-            element.remove() //lol bye
-          }
-        
-        
-        
+            let element = document.querySelector('.winbox #teresalock');
+            if (element) element = element.closest('.winbox').remove();
+          } 
   </script>
         
       <center>
-        <h1 id="time">00:00</h1> <!-- 00:00 is fallback time incase it breaks -->
+        <h1 style="font-size:64px;margin-bottom:0" id="time">00:00</h1> <!-- 00:00 is fallback time incase it breaks -->
       </center>
-      </br>
-      </br>
-      </br>
+      <br/>
+      <br/>
+      <br/>
         <center>
       <button onClick=RemoveLockScreen()>Click here to unlock.</button>
           <p><i>Not working right now.</i></p>
