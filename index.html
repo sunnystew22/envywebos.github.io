@@ -1,6 +1,4 @@
-<!-- What you need to know
 
-TERESA - Teresa is the name for Envy UI, like bookmarks, notifications, and the apps menu.-->
 <html>
 <head>
 <meta property="og:title" content="Envy, the free OS" />
@@ -70,10 +68,43 @@ TERESA - Teresa is the name for Envy UI, like bookmarks, notifications, and the 
           align-items: center;
           }
       </style>
+        <script>function UpdateTime() {
+  let x = new Date();
+  let hours = x.getHours().toString().padStart(2, '0'); // 18
+  let minutes = x.getMinutes().toString().padStart(2, '0'); // 37
+  
+  let timeString = `${hours}:${minutes}` // 18:37
+  let element = document.getElementById('time');
+  element.innerText = timeString;
+}
+UpdateTime();
+setInterval(UpdateTime, 60000); // 60000ms -> 60 sec/1 min delay
+        // Delete lockscreen func.
+
+          function RemoveLockScreen() {
+            let element = document.getElementById('teresalock');
+            await delay(50) // prevents glitch that occurs when clicking it twice rapidly. 
+            element.remove() //lol bye
+          }
+        
+        
+        
+  </script>
+        <!-- Will be based off either iOS or Google/Android 13 -->
       <center>
-        <h1>The system has been locked.</h1>
-        <h3>(user unlock soon, i just need this to work ffs)</h3>
+        <h1 id="time">00:00</h1> <!-- 00:00 is fallback time incase it breaks -->
       </center>
+      </br>
+      </br>
+      </br>
+        <center>
+      <button onClick=RemoveLockScreen()>Click here to unlock.</button>
+        </center>
+        <!-- Above may be converted to h3/a later -->
+
+        
+        <!-- Padlock icon goes here if Google design. -->
+        <!-- See reference pic: https://vids.davidstudios.uk/Pixel_Lockscreen.png  -->
     </div>
     <div id="teresadual">
       <center>
@@ -112,8 +143,7 @@ TERESA - Teresa is the name for Envy UI, like bookmarks, notifications, and the 
       if (navigator.appVersion.indexOf("Mac")!=-1) OSName="Mac";
       if (navigator.appVersion.indexOf("X11")!=-1) OSName="Unix";
       if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
-<!-- Isn't this taken from useragent? android mobile seems to return Linux for some reason. -->
-<!-- Yeah, its useragent. Android IS a Linux distro after all.-->
+
       
       document.write('Host OS: '+OSName);
       </script>
@@ -260,9 +290,9 @@ TERESA - Teresa is the name for Envy UI, like bookmarks, notifications, and the 
     <div id="err">
       <center>
       <br>
-      <img src="icons/info.png" width="64" height="64" ><img>
+      <img src="icons/info.png" width="64" height="64" ><img> <!-- May replace info icon with an error icon/SVG (David)-->
       <h1>Error</h1>
-      <p>We have detected a error. Refresh recommended. This may be a missing feature aswell.</p>
+      <p>An error happened! A <a href="https://envywebos.github.io" target="">refresh</a> is recommended. This may also be because of a missing feature.</p>
       </center>
     </div>
     <div id="widgallery">

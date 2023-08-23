@@ -51,7 +51,14 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
         url: "https://discross.rc24.xyz",
       });
     }
-    
+
+function LockScreen() {
+await delay(50)
+var design = "/lockscreen.html"
+    // work in progress
+}
+
+
     function showWeather() {
       new WinBox({
         title: "Weather",
