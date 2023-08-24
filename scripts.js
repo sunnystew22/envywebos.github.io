@@ -1,6 +1,5 @@
 // todo
-// lock screen (david)
-// found an x86 emu in JS/WebGL, might make that a seperate Dual thing later (wuigi)
+// none atm
 if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.html')
 
   function SearchQuery(val) {
@@ -52,8 +51,21 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
       });
     }
 
-
-
+    function showotherSearch() {
+      new WinBox({
+        title: "Discord",
+        class: "eclipsemono","no-title"
+        x: "center",
+        y: "center",
+        width: "50%",
+        height: "50%",
+        top: 0,
+        right: 0,
+        bottom: 35,
+        left: 0,
+        url: "https://frogfind.com",
+      });
+    }
 
     function showWeather() {
       new WinBox({
