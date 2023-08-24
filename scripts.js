@@ -54,7 +54,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
     function showotherSearch() {
       new WinBox({
         title: "Discord",
-        class: "eclipsemono","no-title",
+        class: ["no-min", "no-max", "no-title", "eclipsemono"],
         x: "left",
         y: "bottom",
         width: "50%",
