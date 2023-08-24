@@ -25,7 +25,8 @@ body {
       background-color: #202020;
     } /* replace hex 202020 with any other color if you want */
     .wb-full {
-      display: none;
+      display: none;ackground-color: #202020;
+  background-filter: blur(20px);
     }
     .winbox.eclipsemono {
       background: #2f2f2f;
@@ -52,7 +53,6 @@ body {
   width: 100%;
   opacity: 0.9;
   background-color: #202020;
-  background-filter: blur(20px);
   display: flex;
   align-items: center;
   justify-content: flex-end;
