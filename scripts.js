@@ -53,12 +53,12 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
 
     function showotherSearch() {
       new WinBox({
-        title: "Discord",
+        title: "Envy search (Powered by FrogFind)",
         class: ["no-min", "no-max", "no-title", "eclipsemono"],
         x: "left",
         y: "bottom",
-        width: "50%",
-        height: "25%",
+        width: "45%",
+        height: "50%",
         top: 0,
         right: 0,
         bottom: 35,
