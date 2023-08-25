@@ -131,10 +131,10 @@ setInterval(UpdateTime, 1000); // 60000ms -> 60 sec/1 min delay
       <h3>Version 4.4</h3>
       <script>
       var OSName="Unknown OS";
-      if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
-      if (navigator.appVersion.indexOf("Mac")!=-1) OSName="Mac";
+      if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows NT";
+      if (navigator.appVersion.indexOf("Mac")!=-1) OSName="macOS";
       if (navigator.appVersion.indexOf("X11")!=-1) OSName="Unix";
-      if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
+      if (navigator.appVersion.indexOf("Linux")!=-1) OSName="GNU/Linux";
 
       
       document.write('Host OS: '+OSName);
