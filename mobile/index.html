@@ -1,42 +1,50 @@
 <html>
   <title>Unsupported</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <script src="winbox.bundle.min.js"></script>
-  
+
   <div id="NoSupport">
-    <center><img src="/icons/info.png" alt="Info icon"></img></center>
-  </br>
+    <center><img src="/icons/info.png" alt="Info icon" /></center>
+    <br />
     <center><h2>Oops!</h2></center>
-  </br>
-  </br>
+    <br />
+    <br />
     <center><p>Envy OS is not available on mobile devices.</p></center>
-  </br>
-  </br>
-  </br>
-    <center><h5>Are you on PC? Try <a href="https://envywebos.github.io" target=""><strong>refreshing</strong></a> the page.</h5></center>
+    <br />
+    <br />
+    <br />
+    <center>
+      <h5>
+        Are you on PC? Try
+        <a href="https://envywebos.github.io" target=""
+          ><strong>refreshing</strong></a
+        >
+        the page.
+      </h5>
+    </center>
   </div>
   <script>
 
 
-  function NoSupport() {
-  new WinBox({
-    title: "Unsupported",
-    class: ["no-max", "no-min", "no-title", "eclipsemono", "no-close"],
-    x: "center",
-    y: "center",
-    width: "100%",
-    height: "100%",
-    top: 0,
-    right: 0,
-    bottom: 35,
-    left: 0,
-    mount: document.getElementById("NoSupport").cloneNode(true)
-,
-  });
-}
+      function NoSupport() {
+      new WinBox({
+        title: "Unsupported",
+        class: ["no-max", "no-min", "no-title", "eclipsemono", "no-close"],
+        x: "center",
+        y: "center",
+        width: "100%",
+        height: "100%",
+        top: 0,
+        right: 0,
+        bottom: 35,
+        left: 0,
+        mount: document.getElementById("NoSupport").cloneNode(true)
+    ,
+      });
+    }
 
-  await delay(50)
-    NoSupport()
+      await delay(50)
+        NoSupport()
   </script>
 </html>

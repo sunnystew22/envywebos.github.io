@@ -1,300 +1,358 @@
-
+<!DOCTYPE html>
 <html>
-<head>
-<meta property="og:title" content="Envy, the free OS" />
-<meta property="og:description" content="Envy is an environment for locked down Windows and Chromebooks." />
-<meta property="og:image" content="envywebos.github.io/envy.jpg" />
-  <title>Envy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta property="og:title" content="Envy, the free OS" />
+    <meta
+      property="og:description"
+      content="Envy is an environment for locked down Windows and Chromebooks."
+    />
+    <meta property="og:image" content="envywebos.github.io/envy.jpg" />
+    <title>Envy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <link rel="stylesheet" href="style.css">
-<div class="bar">
-<span style="text-align: left; position: absolute; left: 0; bottom: 0;display: flex;height: 35px;gap: 6px; align-items: center;">
-<img src="start.png" onclick="showBooWindow()">
-<input id="searchBox" type="text" name="searchBox" value="" onclick="showotherSearch()" placeholder="Search Envy and the web">
-<img src="icons/tops.png" width="25" height="25" onclick="manageDual()">
-</span>
-<span style="text-align: right; position: absolute; right: 0; bottom: 0;display: flex;height: 35px;gap: 6px; align-items: center;">
-<div id="clock" style="display: flex;justify-content: center;align-items: center;"></div>
-<img src="icons/noti.png" onclick="shownoti()" width="25" height="25">
-<img src="icons/mark.png" width="25" height="25" onclick="showmark()">
-</span>
-</div>
-    <div id="contextMenu" class="context-menu" 
-        style="display:none">
-        <ul>
-            <li><a onclick="location.reload()">Refresh</a></li>
-            <li><a onclick="showmoreTelegram()">Dual settings</a></li>
-            <li><a onclick="displaypanel()">Display settings</a></li>
-        </ul>
-    </div>
-  <div class="hidden">
-    <div id="Teresa">
-      <center>
-      <br>
-        <img src="icons/lock.png" width="32" height="32" onclick="showlock()" />
-        <p>Welcome,</p>
-        <p><b>User</b></p>
-        <button onclick="showall()">Show all apps</button>
-      </center>
-    </div>
-    <div id="teresaplus">
-      <center>
-      <br>
-        <br><img src="icons/info.png" onclick="showAboutWindow()" />
-        <img src="icons/clock.png" onclick="showCock()" />
-        <img src="icons/discross.png" onclick="showDiscordWindow()" />
-        <img src="icons/game.png" onclick="summongamehub()" />
-        <img src="icons/setting.png" onclick="showSettingsWindow()" />
-        <img src="icons/vid.png" onclick="showVidstest()" />
-        <img src="icons/wttr.png" onclick="showWeather()" />
-        <img src="icons/widget.png" onclick="widgetinit()" />
-      </center>
-    </div>
-      <div id="teresalock">
-      <style>
-        #teresalock {
-          background-image: url("wp2.jpg");
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;
-          background-repeat: no-repeat;
-          height: 100%;
+  <body>
+    <link rel="stylesheet" href="style.css" />
+    <div class="bar">
+      <span
+        style="
+          text-align: left;
+          position: absolute;
+          left: 0;
+          bottom: 0;
           display: flex;
-          flex-direction: column;
-          gap: 8px;
-          justify-content: center;
+          height: 35px;
+          gap: 6px;
           align-items: center;
+        "
+      >
+        <img src="start.png" onclick="showBooWindow()" />
+        <input
+          id="searchBox"
+          type="text"
+          name="searchBox"
+          value=""
+          onclick="showotherSearch()"
+          placeholder="Search Envy and the web"
+        />
+        <img
+          src="icons/tops.png"
+          width="25"
+          height="25"
+          onclick="manageDual()"
+        />
+      </span>
+      <span
+        style="
+          text-align: right;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          height: 35px;
+          gap: 6px;
+          align-items: center;
+        "
+      >
+        <div
+          id="clock"
+          style="display: flex; justify-content: center; align-items: center"
+        ></div>
+        <img src="icons/noti.png" onclick="shownoti()" width="25" height="25" />
+        <img src="icons/mark.png" width="25" height="25" onclick="showmark()" />
+      </span>
+    </div>
+    <div id="contextMenu" class="context-menu" style="display: none">
+      <ul>
+        <li><a onclick="location.reload()">Refresh</a></li>
+        <li><a onclick="showmoreTelegram()">Dual settings</a></li>
+        <li><a onclick="displaypanel()">Display settings</a></li>
+      </ul>
+    </div>
+    <div class="hidden">
+      <div id="Teresa">
+        <center>
+          <br />
+          <img
+            src="icons/lock.png"
+            width="32"
+            height="32"
+            onclick="showlock()"
+          />
+          <p>Welcome,</p>
+          <p><b>User</b></p>
+          <button onclick="showall()">Show all apps</button>
+        </center>
+      </div>
+      <div id="teresaplus">
+        <center>
+          <br />
+          <br /><img src="icons/info.png" onclick="showAboutWindow()" />
+          <img src="icons/clock.png" onclick="showCock()" />
+          <img src="icons/discross.png" onclick="showDiscordWindow()" />
+          <img src="icons/game.png" onclick="summongamehub()" />
+          <img src="icons/setting.png" onclick="showSettingsWindow()" />
+          <img src="icons/vid.png" onclick="showVidstest()" />
+          <img src="icons/wttr.png" onclick="showWeather()" />
+          <img src="icons/widget.png" onclick="widgetinit()" />
+        </center>
+      </div>
+      <div id="teresalock">
+        <style>
+          #teresalock {
+            background-image: url("wp2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: center;
+            align-items: center;
           }
-      </style>
-        <script>function UpdateTime() {
-  let x = new Date();
-  let hours = x.getHours().toString().padStart(2, '0'); // 18
-  let minutes = x.getMinutes().toString().padStart(2, '0'); // 37
-  let timeString = `${hours}:${minutes}` // example: 18:37
-  let elements = document.querySelectorAll('#time');
-  elements.forEach(function(elm) {
-    if (elm === undefined || elm === null) return;
-    elm.innerText = timeString;
-  });
-}
-UpdateTime();
-setInterval(UpdateTime, 1000); // 60000ms -> 60 sec/1 min delay
-        // Delete lockscreen func.
+        </style>
+        <script>
+          function UpdateTime() {
+            let x = new Date();
+            let hours = x.getHours().toString().padStart(2, "0"); // 18
+            let minutes = x.getMinutes().toString().padStart(2, "0"); // 37
+            let timeString = `${hours}:${minutes}`; // example: 18:37
+            let elements = document.querySelectorAll("#time");
+            elements.forEach(function (elm) {
+              if (elm === undefined || elm === null) return;
+              elm.innerText = timeString;
+            });
+          }
+          UpdateTime();
+          setInterval(UpdateTime, 1000); // 60000ms -> 60 sec/1 min delay
+          // Delete lockscreen func.
 
           function RemoveLockScreen() {
-            let element = document.querySelector('.winbox #teresalock');
-            if (element) element = element.closest('.winbox').remove();
-          } 
-  </script>
-        
-      <center>
-        <h1 style="font-size:72px;margin-bottom:0" id="time">00:00</h1> <!-- 00:00 is fallback time incase it breaks -->
-      </center>
-      <br/>
+            let element = document.querySelector(".winbox #teresalock");
+            if (element) element = element.closest(".winbox").remove();
+          }
+        </script>
+
         <center>
-      <img src=icons/lock.png onclick="RemoveLockScreen()">
-          
+          <h1 style="font-size: 72px; margin-bottom: 0" id="time">00:00</h1>
+          <!-- 00:00 is fallback time incase it breaks -->
         </center>
-     
-    </div>
-    <div id="teresadual">
-      <center>
-      <br>
-      <img src="icons/tops.png" onclick="showDualWindow()">
-        <img src="icons/term.png" onclick="showTelegram()" />
-      </center>
-    </div>
-    <div id="TeresaZwei">
-      <center>
-      <p><b>No notifications.</b></p>
-      </center>
-    </div>
-    <div id="TeresaMark">
-      <center>
-        <br><button>Center Stage</button>
-      <p><b>No bookmarks.</b></p>
-      </center>
-    </div>
-    <div id="teresadrei">
-      <center>
-      <h2>Select a widget</h2>
-        <img src="icons/widget.png" onclick="widgeterror()" />
-        <img src="icons/widget.png" onclick="widgetgallery()" />
-      </center>
-    </div>
-    <div id="about">
-      <center>
-      <br>
-      <img src="boo.png" width="64" height="64" ><img>
-      <h1>Envy</h1>
-      <h3>Version 4.4</h3>
-      <script>
-      var OSName="Unknown OS";
-      if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows NT";
-      if (navigator.appVersion.indexOf("Mac")!=-1) OSName="macOS";
-      if (navigator.appVersion.indexOf("X11")!=-1) OSName="Unix";
-      if (navigator.appVersion.indexOf("Linux")!=-1) OSName="GNU/Linux";
+        <br />
+        <center><img src=icons/lock.png onclick="RemoveLockScreen()"></center>
+      </div>
+      <div id="teresadual">
+        <center>
+          <br />
+          <img src="icons/tops.png" onclick="showDualWindow()" />
+          <img src="icons/term.png" onclick="showTelegram()" />
+        </center>
+      </div>
+      <div id="TeresaZwei">
+        <center>
+          <p><b>No notifications.</b></p>
+        </center>
+      </div>
+      <div id="TeresaMark">
+        <center>
+          <br /><button>Center Stage</button>
+          <p><b>No bookmarks.</b></p>
+        </center>
+      </div>
+      <div id="teresadrei">
+        <center>
+          <h2>Select a widget</h2>
+          <img src="icons/widget.png" onclick="widgeterror()" />
+          <img src="icons/widget.png" onclick="widgetgallery()" />
+        </center>
+      </div>
+      <div id="about">
+        <center>
+          <br />
+          <img src="boo.png" width="64" height="64" /><img />
+          <h1>Envy</h1>
+          <h3>Version 4.4</h3>
+          <script>
+            var OSName = "Unknown OS";
+            if (navigator.appVersion.indexOf("Win") != -1)
+              OSName = "Windows NT";
+            if (navigator.appVersion.indexOf("Mac") != -1) OSName = "macOS";
+            if (navigator.appVersion.indexOf("X11") != -1) OSName = "Unix";
+            if (navigator.appVersion.indexOf("Linux") != -1)
+              OSName = "GNU/Linux";
 
-      
-      document.write('Host OS: '+OSName);
-      </script>
-      <br><br>
-      
-      <button onclick="showmore()">Advanced information</button><br><br>
-      <button onclick="showlog()">Open change log</button>
-      </center>
-    </div>
-    <div id="more">
-      <center>
-      <br>
-      <h1>Advanced information:</h1>
-      <script>
-      var nVer = navigator.appVersion;
-      var nAgt = navigator.userAgent;
-      var browserName  = navigator.appName;
-      var fullVersion  = ''+parseFloat(navigator.appVersion); 
-      var majorVersion = parseInt(navigator.appVersion,10);
-      var nameOffset,verOffset,ix;
+            document.write("Host OS: " + OSName);
+          </script>
+          <br /><br />
 
-      // In Opera, the true version is after "OPR" or after "Version"
-      if ((verOffset=nAgt.indexOf("OPR"))!=-1) {
-       browserName = "Opera";
-      fullVersion = nAgt.substring(verOffset+4);
-       if ((verOffset=nAgt.indexOf("Version"))!=-1) 
-      fullVersion = nAgt.substring(verOffset+8);
-      }
-      // In MS Edge, the true version is after "Edg" in userAgent
-      else if ((verOffset=nAgt.indexOf("Edg"))!=-1) {
-       browserName = "Microsoft Edge";
-       fullVersion = nAgt.substring(verOffset+4);
-      }
-      // In MSIE, the true version is after "MSIE" in userAgent
-      else if ((verOffset=nAgt.indexOf("MSIE"))!=-1) {
-       browserName = "Microsoft Internet Explorer";
-       fullVersion = nAgt.substring(verOffset+5);
-      }
-      // In Chrome, the true version is after "Chrome" 
-      else if ((verOffset=nAgt.indexOf("Chrome"))!=-1) {
-       browserName = "Chrome";
-       fullVersion = nAgt.substring(verOffset+7);
-      }
-      // In Safari, the true version is after "Safari" or after "Version" 
-      else if ((verOffset=nAgt.indexOf("Safari"))!=-1) {
-       browserName = "Safari";
-       fullVersion = nAgt.substring(verOffset+7);
-       if ((verOffset=nAgt.indexOf("Version"))!=-1) 
-         fullVersion = nAgt.substring(verOffset+8);
-      }
-      // In Firefox, the true version is after "Firefox" 
-      else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
-       browserName = "Firefox";
-       fullVersion = nAgt.substring(verOffset+8);
-      }
-      // In most other browsers, "name/version" is at the end of userAgent 
-      else if ( (nameOffset=nAgt.lastIndexOf(' ')+1) < 
-                (verOffset=nAgt.lastIndexOf('/')) ) 
-      {
-       browserName = nAgt.substring(nameOffset,verOffset);
-       fullVersion = nAgt.substring(verOffset+1);
-       if (browserName.toLowerCase()==browserName.toUpperCase()) {
-        browserName = navigator.appName;
-       }
-      }
-      // trim the fullVersion string at semicolon/space if present
-      if ((ix=fullVersion.indexOf(";"))!=-1)
-         fullVersion=fullVersion.substring(0,ix);
-      if ((ix=fullVersion.indexOf(" "))!=-1)
-         fullVersion=fullVersion.substring(0,ix);
+          <button onclick="showmore()">Advanced information</button><br /><br />
+          <button onclick="showlog()">Open change log</button>
+        </center>
+      </div>
+      <div id="more">
+        <center>
+          <br />
+          <h1>Advanced information:</h1>
+          <script>
+            var nVer = navigator.appVersion;
+            var nAgt = navigator.userAgent;
+            var browserName = navigator.appName;
+            var fullVersion = "" + parseFloat(navigator.appVersion);
+            var majorVersion = parseInt(navigator.appVersion, 10);
+            var nameOffset, verOffset, ix;
 
-      majorVersion = parseInt(''+fullVersion,10);
-      if (isNaN(majorVersion)) {
-       fullVersion  = ''+parseFloat(navigator.appVersion); 
-       majorVersion = parseInt(navigator.appVersion,10);
-      }
+            // In Opera, the true version is after "OPR" or after "Version"
+            if ((verOffset = nAgt.indexOf("OPR")) != -1) {
+              browserName = "Opera";
+              fullVersion = nAgt.substring(verOffset + 4);
+              if ((verOffset = nAgt.indexOf("Version")) != -1)
+                fullVersion = nAgt.substring(verOffset + 8);
+            }
+            // In MS Edge, the true version is after "Edg" in userAgent
+            else if ((verOffset = nAgt.indexOf("Edg")) != -1) {
+              browserName = "Microsoft Edge";
+              fullVersion = nAgt.substring(verOffset + 4);
+            }
+            // In MSIE, the true version is after "MSIE" in userAgent
+            else if ((verOffset = nAgt.indexOf("MSIE")) != -1) {
+              browserName = "Microsoft Internet Explorer";
+              fullVersion = nAgt.substring(verOffset + 5);
+            }
+            // In Chrome, the true version is after "Chrome"
+            else if ((verOffset = nAgt.indexOf("Chrome")) != -1) {
+              browserName = "Chrome";
+              fullVersion = nAgt.substring(verOffset + 7);
+            }
+            // In Safari, the true version is after "Safari" or after "Version"
+            else if ((verOffset = nAgt.indexOf("Safari")) != -1) {
+              browserName = "Safari";
+              fullVersion = nAgt.substring(verOffset + 7);
+              if ((verOffset = nAgt.indexOf("Version")) != -1)
+                fullVersion = nAgt.substring(verOffset + 8);
+            }
+            // In Firefox, the true version is after "Firefox"
+            else if ((verOffset = nAgt.indexOf("Firefox")) != -1) {
+              browserName = "Firefox";
+              fullVersion = nAgt.substring(verOffset + 8);
+            }
+            // In most other browsers, "name/version" is at the end of userAgent
+            else if (
+              (nameOffset = nAgt.lastIndexOf(" ") + 1) <
+              (verOffset = nAgt.lastIndexOf("/"))
+            ) {
+              browserName = nAgt.substring(nameOffset, verOffset);
+              fullVersion = nAgt.substring(verOffset + 1);
+              if (browserName.toLowerCase() == browserName.toUpperCase()) {
+                browserName = navigator.appName;
+              }
+            }
+            // trim the fullVersion string at semicolon/space if present
+            if ((ix = fullVersion.indexOf(";")) != -1)
+              fullVersion = fullVersion.substring(0, ix);
+            if ((ix = fullVersion.indexOf(" ")) != -1)
+              fullVersion = fullVersion.substring(0, ix);
 
-      document.write(''
-       +'Browser name  = '+browserName+'<br>'
-       +'Full version  = '+fullVersion+'<br>'
-       +'Major version = '+majorVersion+'<br>'
-       +'User agent = '+navigator.userAgent+'<br>'
-      )
-      </script>
-      </center>
+            majorVersion = parseInt("" + fullVersion, 10);
+            if (isNaN(majorVersion)) {
+              fullVersion = "" + parseFloat(navigator.appVersion);
+              majorVersion = parseInt(navigator.appVersion, 10);
+            }
+
+            document.write(
+              "" +
+                "Browser name  = " +
+                browserName +
+                "<br>" +
+                "Full version  = " +
+                fullVersion +
+                "<br>" +
+                "Major version = " +
+                majorVersion +
+                "<br>" +
+                "User agent = " +
+                navigator.userAgent +
+                "<br>"
+            );
+          </script>
+        </center>
+      </div>
+      <div id="clockapp">
+        <center>
+          <h2>coming soon</h2>
+        </center>
+      </div>
+      <div id="log">
+        <center>
+          <br />
+          <img src="boo.png" width="64" height="64" /><img />
+          <h1>Changelog</h1>
+          <h3>Build 081723</h3>
+          <p>
+            - Duals now working<br />
+            - Dual manager added<br />
+            - Weather app added<br />
+            - Bookmark development started
+          </p>
+        </center>
+      </div>
+      <div id="cc">
+        <center>
+          <br />
+          <h2>Adjust your computer's settings</h2>
+          <img src="icons/display.png" onclick="displaypanel()" />
+          <img src="icons/user.png" onclick="userpanel()" />
+        </center>
+      </div>
+      <div id="ccdisplay">
+        <center>
+          <br />
+          <h2>Custom wallpapers</h2>
+          <button onclick="urlbox()">Type in an image URL</button><br /><br />
+        </center>
+      </div>
+      <div id="urlbox">
+        <center>
+          <br />
+          <h2>Type in your URL</h2>
+          <input type="text" id="newid" />
+          <button onclick="setWallpaper()">Apply</button>
+        </center>
+      </div>
+      <div id="ccuser">
+        <center>
+          <br />
+          <h2>Change or create a user</h2>
+          <button onclick="showerror()">Make a local account</button
+          ><br /><br />
+          <button onclick="showerror()">Use your Zone account</button>
+          <p>Accounts are non-functional as of now.</p>
+        </center>
+      </div>
+      <div id="makeitlocal">
+        <center>
+          <br />
+          <h2>Coming soon</h2>
+        </center>
+      </div>
+      <div id="err">
+        <center>
+          <br />
+          <img src="icons/info.png" width="64" height="64" /><img />
+          <!-- May replace info icon with an error icon/SVG (David)-->
+          <h1>Error</h1>
+          <p>
+            An error happened! A
+            <a href="https://envywebos.github.io" target="">refresh</a> is
+            recommended. This may also be because of a missing feature.
+          </p>
+        </center>
+      </div>
+      <div id="widgallery">
+        <center><img src="boo.png" width="84" height="84" /><img /></center>
+      </div>
     </div>
-    <div id="clockapp">
-      <center>
-      <h2>coming soon</h2>
-      </center>
-    </div>
-    <div id="log">
-      <center>
-      <br>
-      <img src="boo.png" width="64" height="64" ><img>
-      <h1>Changelog</h1>
-      <h3>Build 081723</h3>
-      <p>
-      - Duals now working<br>
-      - Dual manager added<br>
-      - Weather app added<br>
-      - Bookmark development started
-      </p>
-      </center>
-    </div>
-    <div id="cc">
-      <center>
-      <br>
-      <h2>Adjust your computer's settings</h2>
-      <img src="icons/display.png" onclick="displaypanel()" />
-      <img src="icons/user.png" onclick="userpanel()" />
-      </center>
-    </div>
-    <div id="ccdisplay">
-      <center>
-      <br>
-      <h2>Custom wallpapers</h2>
-      <button onclick="urlbox()">Type in an image URL</button><br><br>
-      </center>
-    </div>
-    <div id="urlbox">
-      <center>
-      <br>
-      <h2>Type in your URL</h2>
-      <input type=text id="newid">
-      <button onclick="setWallpaper()">Apply</button>
-      </center>
-    </div>
-    <div id="ccuser">
-      <center>
-      <br>
-      <h2>Change or create a user</h2>
-      <button onclick="showerror()">Make a local account</button><br><br>
-      <button onclick="showerror()">Use your Zone account</button>
-      <p>Accounts are non-functional as of now.</p>
-      </center>
-    </div>
-    <div id="makeitlocal">
-      <center>
-      <br>
-      <h2>Coming soon</h2>
-      </center>
-    </div>
-    <div id="err">
-      <center>
-      <br>
-      <img src="icons/info.png" width="64" height="64" ><img> <!-- May replace info icon with an error icon/SVG (David)-->
-      <h1>Error</h1>
-      <p>An error happened! A <a href="https://envywebos.github.io" target="">refresh</a> is recommended. This may also be because of a missing feature.</p>
-      </center>
-    </div>
-    <div id="widgallery">
-      <center>
-      <img src="boo.png" width="84" height="84" ><img>
-      </center>
-    </div>
-  </div>
-  <script src="winbox.bundle.min.js"></script>
-  <script src="scripts.js"></script>
-  <script>
-  </script>
+    <script src="winbox.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+    <script></script>
+  </body>
 </html>
