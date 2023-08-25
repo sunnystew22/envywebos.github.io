@@ -468,23 +468,6 @@ function showVidstest() {
       });
     }
     
-    function showSearch() {
-      new WinBox({
-        title: " ",
-        class: ["no-max", "no-min", "no-title", "eclipsemono"],
-        x: "left",
-        y: "bottom",
-        width: "100%",
-        height: "40%",
-        header: 0,
-        top: 0,
-        right: 0,
-        bottom: 35,
-        left: 0,
-        url: "apps/search.html",
-      });
-    }
-    
     function shownoti() {
       new WinBox({
         title: " ",
