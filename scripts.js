@@ -114,7 +114,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
         right: 0,
         bottom: 35,
         left: 0,
-        url: "https://bellard.org/jslinux/vm.html?url=win2k.cfg&mem=256&graphic=1&w=800&h=600",
+        url: "https://bellard.org/jslinux/vm.html?url=win2k.cfg&mem=512&graphic=1&w=800&h=600",
       });
     }
 
