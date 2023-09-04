@@ -51,6 +51,9 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
       });
     }
 
+
+//Frogfind seems to be shown as unsecure on chrome browser.
+
     function showotherSearch() {
       new WinBox({
         title: "Envy search (Powered by FrogFind)",
