@@ -3,6 +3,9 @@
 ## Envy, the open OS
 Envy is a environment for locked down devices, such as Chromebooks or Windows devices.
 
+## How do I access Envy?
+Via https://envywebos.github.io .
+
 ## What can Envy do?
 **THIS PART OF THE README IS DUE TO CHANGE.**
 
