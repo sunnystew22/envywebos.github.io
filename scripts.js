@@ -359,7 +359,7 @@ function showVidstest() {
     
     function showlog() {
       new WinBox({
-        title: "Changelog",
+        title: "Credits",
         class: ["no-max", "no-min", "no-title", "eclipsemono"],
         x: "center",
         y: "center",
