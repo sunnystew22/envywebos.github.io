@@ -36,6 +36,7 @@ body {
     .winbox.eclipsemono .wb-body {
       color: #fff;
       background: #202020;
+      border-radius: "5px";
     }
     .winbox.eclipsemono .wb-title {
       color: #fff;
