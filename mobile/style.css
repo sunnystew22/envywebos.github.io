@@ -1,3 +1,4 @@
+@import url("https://dsans.davidstudios.uk/css2.css")
 body {
       background-image: url("wp.jpg");
       background-size: cover;
@@ -5,8 +6,8 @@ body {
       background-attachment: fixed;
       background-repeat: no-repeat;
       color: white;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Arial",
-        Roboto, Oxygen, Cantarell, "Open Sans", "Helvetica Neue",
+      font-family: "DSans Regular", system-ui, -apple-system, BlinkMacSystemFont, "Arial",
+        Roboto, Cantarell, "Helvetica Neue",
         sans-serif;
     }
     * {
