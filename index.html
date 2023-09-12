@@ -294,6 +294,7 @@
           <br />
           <h2>Adjust your computer's settings</h2>
           <img src="icons/display.png" onclick="displaypanel()" />
+          <img src="icons/trans.png" onclick="transpanel()" />
           <img src="icons/user.png" onclick="userpanel()" />
         </center>
       </div>
@@ -310,6 +311,23 @@
           <h2>Type in your URL</h2>
           <input type="text" id="newid" />
           <button onclick="setWallpaper()">Apply</button>
+        </center>
+      </div>
+        <div id="cctrans">
+        <center>
+          <br />
+          <h2>Localisation</h2>
+          <form action="/action_page.php">
+          <label for="trans">What's your language?</label>
+          <select name="trans" id="trans">
+          <option value="en">English</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+          <option value="es">Spanish</option>
+          </select>
+          <!-- <input type="submit" value="Submit"> -->
+          </form>
+          <p>Accounts are non-functional as of now.</p>
         </center>
       </div>
       <div id="ccuser">
