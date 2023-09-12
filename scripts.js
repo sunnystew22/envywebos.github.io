@@ -38,7 +38,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
       title: "Envy Setup",
       modal: true,
       class: "eclipsemono",
-      url: "https://discross.rc24.xyz",
+      url: "/apps/oobe.html",
     });
 
     function showDiscordWindow() {
