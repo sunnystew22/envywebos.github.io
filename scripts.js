@@ -443,7 +443,23 @@ function showVidstest() {
         mount: document.getElementById("ccdisplay").cloneNode(true),
       });
     }
-    
+
+    function transpanel() {
+      new WinBox({
+        title: "Localisation",
+        class: ["no-max", "no-min", "eclipsemono"],
+        x: "center",
+        y: "center",
+        width: "25%",
+        height: "50%",
+        top: 0,
+        right: 0,
+        bottom: 35,
+        left: 0,
+        mount: document.getElementById("cctrans").cloneNode(true),
+      });
+    }
+
     function userpanel() {
       new WinBox({
         title: "User options",
