@@ -34,6 +34,13 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
             }
         }
 
+    new WinBox({
+      title: "Envy Setup",
+      modal: true,
+      class: "eclipsemono",
+      url: "https://discross.rc24.xyz",
+    });
+
     function showDiscordWindow() {
       new WinBox({
         title: "Discord",
@@ -51,8 +58,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
       });
     }
 
-
-//Frogfind seems to be shown as unsecure on chrome browser.
+//Frogfind seems to be shown as unsecure on chrome browser. (can confirm, sticking to Bing for now.) - wuigi
 
     function showotherSearch() {
       new WinBox({
@@ -66,7 +72,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
         right: 0,
         bottom: 35,
         left: 0,
-        url: "https://frogfind.com",
+        url: "https:/bing.com",
       });
     }
 
