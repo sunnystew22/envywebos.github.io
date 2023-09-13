@@ -62,7 +62,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
 
     function showotherSearch() {
       new WinBox({
-        title: "Envy search (Powered by FrogFind)",
+        title: "Envy search",
         class: ["no-min", "no-max", "no-title", "eclipsemono"],
         x: "left",
         y: "bottom",
