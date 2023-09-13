@@ -38,7 +38,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
       title: "Envy Setup",
       modal: true,
       class: "eclipsemono",
-      url: "/apps/oobe.html",
+      mount: document.getElementById("oobe").cloneNode(true),
     });
 
     function showInvidious() {
