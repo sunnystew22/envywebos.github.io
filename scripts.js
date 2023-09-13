@@ -40,6 +40,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
       class: "eclipsemono",
       url: "/apps/oobe.html",
     });
+
     function showInvidious() {
       new WinBox({
         title: "YouTube",
@@ -54,7 +55,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
         right: 0,
         bottom: 35,
         left: 0,
-        url: "https://vid.puffyan.us/feed/popular",
+        url: "invidious.private.coffee/feed/popular",
       });
     }
 
