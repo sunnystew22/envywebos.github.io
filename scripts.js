@@ -40,6 +40,23 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
       class: "eclipsemono",
       url: "/apps/oobe.html",
     });
+    function showInvidious() {
+      new WinBox({
+        title: "YouTube",
+        icon: "https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png",
+        icon: "icons/invidious.png",
+        class: "eclipsemono",
+        x: "center",
+        y: "center",
+        width: "50%",
+        height: "50%",
+        top: 0,
+        right: 0,
+        bottom: 35,
+        left: 0,
+        url: "https://vid.puffyan.us/feed/popular",
+      });
+    }
 
     function showDiscordWindow() {
       new WinBox({
