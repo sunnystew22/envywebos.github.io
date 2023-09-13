@@ -55,7 +55,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
         right: 0,
         bottom: 35,
         left: 0,
-        url: "https://invidious.private.coffee/feed/popular",
+        url: "https://invidious.slipfox.xyz/webhp?igu=1",
       });
     }
 
