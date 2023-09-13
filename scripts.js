@@ -469,7 +469,7 @@ function showVidstest() {
         x: "center",
         y: "center",
         width: "25%",
-        height: "20%",
+        height: "25%",
         top: 0,
         right: 0,
         bottom: 35,
