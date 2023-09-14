@@ -215,8 +215,8 @@ function showVidstest() {
       document.body.style.backgroundImage = 'url("' + document.querySelector(".winbox #newid").value + '")';
     }
     
-    function commwp1() {
-      document.body.style.backgroundImage = 'url("' + 'pack.jpg' + '")';
+    function purple() {
+      document.body.style.backgroundImage = 'url("' + 'purple.png' + '")';
     }
     
     function showzonelogon() {
