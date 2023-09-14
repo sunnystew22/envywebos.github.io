@@ -221,7 +221,7 @@ function showVidstest() {
       document.body.style.backgroundImage = 'url("' + 'purple.png' + '")';
     }
 
-    function bue() {
+    function blue() {
       document.body.style.backgroundImage = 'url("' + 'wp.png' + '")';
     }
 
