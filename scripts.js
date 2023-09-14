@@ -76,6 +76,23 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
       });
     }
 
+    function showEmulation() {
+      new WinBox({
+        title: "Virtual",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Logo_%281992-2001%29.svg",
+        class: "eclipsemono",
+        x: "center",
+        y: "center",
+        width: "50%",
+        height: "50%",
+        top: 0,
+        right: 0,
+        bottom: 35,
+        left: 0,
+        url: "https://copy.sh/v86",
+      });
+    }
+
 //Frogfind seems to be shown as unsecure on chrome browser. (can confirm, sticking to Bing for now.) - wuigi
 
     function showotherSearch() {
