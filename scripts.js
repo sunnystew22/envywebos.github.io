@@ -62,7 +62,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
     function showNotepad() {
       new WinBox({
         title: "Notepad",
-        icon: "https://blogs.windows.com/wp-content/uploads/prod/sites/44/2021/12/Win-Notepad.png",
+        icon: "icons/Win-Notepad.png",
         class: "eclipsemono",
         x: "center",
         y: "center",
