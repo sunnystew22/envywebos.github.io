@@ -59,6 +59,23 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
       });
     }
 
+    function showNotepad() {
+      new WinBox({
+        title: "Notepad",
+        icon: "https://blogs.windows.com/wp-content/uploads/prod/sites/44/2021/12/Win-Notepad.png",
+        class: "eclipsemono",
+        x: "center",
+        y: "center",
+        width: "50%",
+        height: "50%",
+        top: 0,
+        right: 0,
+        bottom: 35,
+        left: 0,
+        url: "https://zen.unit.ms/",
+      });
+    }
+
     function showDiscordWindow() {
       new WinBox({
         title: "Discord",
