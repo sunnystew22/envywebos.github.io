@@ -1,4 +1,4 @@
-![Envy logo](envy.jpg)
+![Envy logo](envy.jpeg)
 
 ## Envy, the open OS
 Envy is a environment for locked down devices, such as Chromebooks or Windows devices.
