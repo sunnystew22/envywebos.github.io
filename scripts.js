@@ -78,7 +78,7 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
 
     
 
-//Frogfind seems to be shown as unsecure on chrome browser. (can confirm, sticking to Bing for now.) - wuigi
+
 
     function showotherSearch() {
       new WinBox({
@@ -219,6 +219,14 @@ function showVidstest() {
     
     function purple() {
       document.body.style.backgroundImage = 'url("' + 'purple.png' + '")';
+    }
+
+    function bue() {
+      document.body.style.backgroundImage = 'url("' + 'wp.png' + '")';
+    }
+
+    function classic() {
+      document.body.style.backgroundImage = 'url("' + 'classic.png' + '")';
     }
     
     function showzonelogon() {
