@@ -19,7 +19,7 @@ body {
   display: flex;
 }
 .hidden {
-  display: none;  
+  display: none;
 }
 .wb-body {
   background-color: #202020;
@@ -100,7 +100,8 @@ body {
   background-color: #1d1e1f;
 }
 
-button, input {
+button,
+input {
   appearance: none;
   font: inherit;
   padding: 6px 12px;
@@ -111,7 +112,7 @@ button, input {
   outline: none;
   cursor: pointer;
 }
-button:hover, input:hover {
+button:hover,
+input:hover {
   background-color: #1d1e1f;
 }
-
