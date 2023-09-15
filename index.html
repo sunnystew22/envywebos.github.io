@@ -13,7 +13,7 @@
   <body>
     <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
     <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
-    
+
     <link rel="stylesheet" href="style.css" />
     <div class="bar">
       <span
@@ -65,11 +65,9 @@
       </span>
     </div>
     <div id="contextMenu" class="context-menu" style="display: none">
-      <ul>
-        <li><a onclick="location.reload()">Refresh</a></li>
-        <li><a onclick="showmoreTelegram()">Dual settings</a></li>
-        <li><a onclick="displaypanel()">Display settings</a></li>
-      </ul>
+      <a onclick="location.reload()">Refresh</a>
+      <a onclick="showmoreTelegram()">Dual settings</a>
+      <a onclick="displaypanel()">Display settings</a>
     </div>
     <div class="hidden">
       <div id="Teresa">
@@ -95,12 +93,26 @@
           <img src="icons/game.png" onclick="summongamehub()" />
           <img src="icons/setting.png" onclick="showSettingsWindow()" />
           <img src="icons/vid.png" onclick="showVidstest()" />
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Windows_Logo_%281992-2001%29.svg/1385px-Windows_Logo_%281992-2001%29.svg.png" height="48" width="48" onclick="showVirtualEMU()" />
-          <img src="https://blogs.windows.com/wp-content/uploads/prod/sites/44/2021/12/Win-Notepad.png" height="48" width="48" onclick="showNotepad()" />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Windows_Logo_%281992-2001%29.svg/1385px-Windows_Logo_%281992-2001%29.svg.png"
+            height="48"
+            width="48"
+            onclick="showVirtualEMU()"
+          />
+          <img
+            src="https://blogs.windows.com/wp-content/uploads/prod/sites/44/2021/12/Win-Notepad.png"
+            height="48"
+            width="48"
+            onclick="showNotepad()"
+          />
           <img src="icons/wttr.png" onclick="showWeather()" />
           <img src="icons/widget.png" onclick="widgetinit()" />
-          <img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png" height="48" width="48" onclick="showInvidious()">
-          
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png"
+            height="48"
+            width="48"
+            onclick="showInvidious()"
+          />
         </center>
       </div>
       <div id="teresasearch">
@@ -108,7 +120,7 @@
       </div>
       <div id="oobe">
         <style>
-        #oobe {
+          #oobe {
             background-image: url("apps/bg.png");
             background-size: cover;
             background-position: center;
@@ -121,24 +133,28 @@
             justify-content: center;
             align-items: center;
           }
-      </style>
-      <center>
-      <img src="https://envywebos.github.io/boo.png" height="100" width="100"></img>
-      <h2>Welcome to Envy</h2>
-      <p>Before you can use it, why not set up your new desktop?</p>
-      <button>Next</button>
-      <br><br>
-      <form action="/action_page.php">
-      <label for="trans">What's your language?</label>
-      <select name="trans" id="trans">
-      <option value="en">English</option>
-      <option value="fr">French</option>
-      <option value="de">German</option>
-      <option value="es">Spanish</option>
-  </select>
-  <!-- <input type="submit" value="Submit"> -->
-</form>
-    </center>
+        </style>
+        <center>
+          <img
+            src="https://envywebos.github.io/boo.png"
+            height="100"
+            width="100"
+          />
+          <h2>Welcome to Envy</h2>
+          <p>Before you can use it, why not set up your new desktop?</p>
+          <button>Next</button>
+          <br /><br />
+          <form action="/action_page.php">
+            <label for="trans">What's your language?</label>
+            <select name="trans" id="trans">
+              <option value="en">English</option>
+              <option value="fr">French</option>
+              <option value="de">German</option>
+              <option value="es">Spanish</option>
+            </select>
+            <!-- <input type="submit" value="Submit"> -->
+          </form>
+        </center>
       </div>
       <div id="teresalock">
         <style>
@@ -218,8 +234,7 @@
           <h3>Version 4.5</h3>
           <script>
             var OSName = "Unknown OS";
-            if (navigator.appVersion.indexOf("Win") != -1)
-              OSName = "Windows";
+            if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
             if (navigator.appVersion.indexOf("Mac") != -1) OSName = "macOS";
             if (navigator.appVersion.indexOf("X11") != -1) OSName = "Unix";
             if (navigator.appVersion.indexOf("Linux") != -1)
@@ -330,7 +345,12 @@
           <br />
           <img src="boo.png" width="64" height="64" /><img />
           <h1>Credits</h1>
-          <p><b>This site uses the <a href="http://dsans.davidstudios.uk/">DSans font.</a></b></p>
+          <p>
+            <b
+              >This site uses the
+              <a href="http://dsans.davidstudios.uk/">DSans font.</a></b
+            >
+          </p>
         </center>
       </div>
       <div id="cc">
@@ -344,7 +364,7 @@
       </div>
       <div id="ccdisplay">
         <center>
-          <br>
+          <br />
           <h2>Envy themes</h2>
           <button onclick="blue()">Blue</button>
           <button onclick="classic()">Classic</button>
@@ -362,19 +382,19 @@
           <button onclick="setWallpaper()">Apply</button>
         </center>
       </div>
-        <div id="cctrans">
+      <div id="cctrans">
         <center>
           <br />
           <h2>Localisation</h2>
           <form action="/action_page.php">
-          <label for="trans">What's your language?</label>
-          <select name="trans" id="trans">
-          <option value="en">English</option>
-          <option value="fr">French</option>
-          <option value="de">German</option>
-          <option value="es">Spanish</option>
-          </select>
-          <!-- <input type="submit" value="Submit"> -->
+            <label for="trans">What's your language?</label>
+            <select name="trans" id="trans">
+              <option value="en">English</option>
+              <option value="fr">French</option>
+              <option value="de">German</option>
+              <option value="es">Spanish</option>
+            </select>
+            <!-- <input type="submit" value="Submit"> -->
           </form>
         </center>
       </div>
@@ -412,40 +432,44 @@
         <p>hi windev :3 (testing loading wheel)</p>
       </div>
       <div id="loading">
-        <svg viewBox="0 0 16 16" width="29" height="29" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    path {
-      animation: spinner 3s ease-in-out infinite;
-      stroke-dasharray: 1,200;
-      stroke-dashoffset: 0;
-      fill: none;
-      stroke-width: 2;
-      stroke-miterlimit: 10;
-      stroke-linecap: round;
-      transform-origin: 50% 50%;
-      stroke: #e7e9ec;
-    }
+        <svg
+          viewBox="0 0 16 16"
+          width="29"
+          height="29"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <style>
+            path {
+              animation: spinner 3s ease-in-out infinite;
+              stroke-dasharray: 1, 200;
+              stroke-dashoffset: 0;
+              fill: none;
+              stroke-width: 2;
+              stroke-miterlimit: 10;
+              stroke-linecap: round;
+              transform-origin: 50% 50%;
+              stroke: #e7e9ec;
+            }
 
-    @keyframes spinner {
-      0% {
-        stroke-dasharray: 0,200;
-        stroke-dashoffset: 0;
-        transform: rotate(0deg);
-      }
-      100% {
-        stroke-dasharray: 130,200;
-        stroke-dashoffset: -43.9;
-        transform: rotate(-360deg);
-      }
-    }
-  </style>
-  <path d="M8 1A1 1 0 008 15 1 1 0 008 1"></path>
-</svg>
+            @keyframes spinner {
+              0% {
+                stroke-dasharray: 0, 200;
+                stroke-dashoffset: 0;
+                transform: rotate(0deg);
+              }
+              100% {
+                stroke-dasharray: 130, 200;
+                stroke-dashoffset: -43.9;
+                transform: rotate(-360deg);
+              }
+            }
+          </style>
+          <path d="M8 1A1 1 0 008 15 1 1 0 008 1"></path>
+        </svg>
       </div>
     </div>
     <script src="winbox.bundle.min.js"></script>
     <script src="scripts.js"></script>
     <script></script>
-    
   </body>
 </html>
