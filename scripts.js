@@ -412,7 +412,7 @@ function showVidstest() {
       });
     }
     
-    function showCock() {
+    function showClock() {
       new WinBox({
         title: "Clock",
         icon: "icons/clock.png",
