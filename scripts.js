@@ -76,6 +76,23 @@ if (/Mobi/.test(navigator.userAgent) === true) location.replace('mobile/index.ht
       });
     }
 
+    function showVirtualEMU() {
+      new WinBox({
+        title: "Virtual x86",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Windows_Logo_%281992-2001%29.svg/1385px-Windows_Logo_%281992-2001%29.svg.png",
+        class: "eclipsemono",
+        x: "center",
+        y: "center",
+        width: "50%",
+        height: "50%",
+        top: 0,
+        right: 0,
+        bottom: 35,
+        left: 0,
+        url: "https://copy.sh/v86/",
+      });
+    }
+
     function showDiscordWindow() {
       new WinBox({
         title: "Discord",
