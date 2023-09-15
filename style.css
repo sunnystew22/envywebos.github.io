@@ -19,7 +19,7 @@ body {
   display: flex;
 }
 .hidden {
-  display: none;
+  display: none;  
 }
 .wb-body {
   background-color: #202020;
@@ -75,6 +75,7 @@ body {
   text-align: center;
   background: #0e0f0f;
   border: 1px solid black;
+  z-index: 999999;
 }
 
 .context-menu {
@@ -96,5 +97,20 @@ body {
 }
 
 .context-menu a:hover {
+  background-color: #1d1e1f;
+}
+
+button {
+  appearance: none;
+  font: inherit;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #ffffff;
+  background: #1d1e1f;
+  border: 1px solid #2f2f2f;
+  outline: none;
+  cursor: pointer;
+}
+button:hover {
   background-color: #1d1e1f;
 }
