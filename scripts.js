@@ -248,18 +248,22 @@ function showVidstest() {
     }
     
     function setWallpaper() {
+      localStorage.setItem("bg", document.querySelector(".winbox #newid").value)
       document.body.style.backgroundImage = 'url("' + document.querySelector(".winbox #newid").value + '")';
     }
     
     function purple() {
+      localStorage.setItem("bg", "purple.png")
       document.body.style.backgroundImage = 'url("' + 'purple.png' + '")';
     }
 
     function blue() {
+      localStorage.setItem("bg", "wp.png")
       document.body.style.backgroundImage = 'url("' + 'wp.png' + '")';
     }
 
     function classic() {
+      localStorage.setItem("bg", "classic.png")
       document.body.style.backgroundImage = 'url("' + 'classic.png' + '")';
     }
     
@@ -655,3 +659,8 @@ setInterval(timeUpdate, 1000); // 1000ms -> 1 second delay
         mount: document.getElementById("widgallery").cloneNode(true),
       });
     }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+      document.body.style.backgroundImage = 'url("' + localStorage.getItem("bg") + '")';
+})
