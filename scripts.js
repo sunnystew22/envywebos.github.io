@@ -662,5 +662,8 @@ setInterval(timeUpdate, 1000); // 1000ms -> 1 second delay
 
 
 document.addEventListener('DOMContentLoaded', () => {
+      if (localStorage.getItem("bg") === undefined || !localStorage.getItem("bg")) {
+        localStorage.setItem("bg", "wp.png")
+      }
       document.body.style.backgroundImage = 'url("' + localStorage.getItem("bg") + '")';
 })
