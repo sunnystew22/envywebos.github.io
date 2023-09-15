@@ -100,7 +100,7 @@ body {
   background-color: #1d1e1f;
 }
 
-button, input, select {
+button, input {
   appearance: none;
   font: inherit;
   padding: 6px 12px;
@@ -111,6 +111,19 @@ button, input, select {
   outline: none;
   cursor: pointer;
 }
-button:hover, input:hover, select:hover {
+button:hover, input:hover {
+  background-color: #1d1e1f;
+}
+select {
+  font: inherit;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #ffffff;
+  background: #1d1e1f;
+  border: 1px solid #2f2f2f;
+  outline: none;
+  cursor: pointer;
+}
+select:hover {
   background-color: #1d1e1f;
 }
