@@ -262,9 +262,6 @@ function showVidstest() {
     function classic() {
       document.body.style.backgroundImage = 'url("' + 'classic.png' + '")';
     }
-
-    localStorage.setItem("bg", "url")
-    localStorage.getItem("bg")
     
     function showzonelogon() {
       new WinBox({
