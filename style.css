@@ -1,4 +1,5 @@
 @import url("https://dsans.davidstudios.uk/css2.css");
+
 body {
   background-image: url("wp.png");
   background-size: cover;
@@ -27,8 +28,8 @@ body {
 .wb-full {
   display: none;
   background-color: #202020;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(25px);
+  
 }
 .winbox.eclipsemono {
   background: #2f2f2f;
