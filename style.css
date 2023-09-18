@@ -7,7 +7,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   color: white;
-  font-family: "DSans Regular", system-ui, -apple-system, BlinkMacSystemFont,
+  font-family: "DSans Regular", system-ui,
     Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 * {
@@ -24,7 +24,7 @@ body {
 }
 .wb-body {
   background-color: #202020;
-} /* replace hex 202020 with any other color if you want */
+}
 .wb-full {
   display: none;
   background-color: #202020;
@@ -125,6 +125,7 @@ select {
   border: 1px solid #2f2f2f;
   outline: none;
   cursor: pointer;
+
 }
 select:hover {
   background-color: #1d1e1f;
