@@ -66,7 +66,7 @@ function showInvidious() {
     right: 0,
     bottom: 35,
     left: 0,
-    url: "https://ivp.cherries.to/",
+    url: "https://youtube.co.uk/", // replacement (yt.davidstudios.uk) is a work in progress but coming soon...
   });
 }
 
