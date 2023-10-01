@@ -6,6 +6,8 @@ Envy is a environment for locked down devices, such as Chromebooks or Windows de
 ## How do I access Envy?
 Via [https://envywebos.github.io](https://envywebos.github.io/).
 
+## ENVY IS CURRENTLY IN LIFE SUPPORT
+
 ## What can Envy do?
 **THIS PART OF THE README IS DUE TO CHANGE.**
 
